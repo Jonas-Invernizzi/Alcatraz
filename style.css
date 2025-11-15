@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background-color: whitesmoke;
+}
+
+#cabeca {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+#inicio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+#p1>button,#p2>button{
+    border: none;
+}
+
+#btn>* {
+    width: 75px;
+    border: 1px red solid;
+    height: 75px;
+}
+img {
+    width: 35px;
+    height: 35px;
+}
+
+
+#btn1,
+#btn2 {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
+
+#players {
+    display: flex;
+}
+
+#personagens {
+    display: flex;
+    gap: 30px;
+}
+
+#p1,
+#p2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5px;
+}
+
+
+#jogos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#barco,
+#prisão {
+    font-size: 24px;
+    
+}
+
+
+#acabar {
+    width: 120px;
+    height: 40px;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: rgb(61, 223, 40);
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+#iniciar {
+    width: 150px;
+    height: 50px;
+    margin-top: 20px;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: rgb(61, 223, 40);
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+#campo {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    gap: 2px;
+    width: 450px;
+    height: 450px;
+}
+
+#campo {
+    width: 100%;
+    height: 100%;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    background-color: white;
+    cursor: pointer;
+    padding: 0;
+}
+
+.esconder {
+    display: none;
+}
+
+.chegada {
+    background-color: red;
+}
+
+.inicios {
+    background-color: rgb(61, 223, 40);
+}
